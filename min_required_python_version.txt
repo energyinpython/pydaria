@@ -1,0 +1,15 @@
+Detecting python files..
+Analyzing 10 files using 8 processes..
+~2, ~3       C:\Informatyka\MCDA_2022_april\pydaria\__init__.py
+2.4, 3.0     C:\Informatyka\MCDA_2022_april\pydaria\additions.py
+2.3, 3.0     C:\Informatyka\MCDA_2022_april\pydaria\correlations.py
+2.6, 3.0     C:\Informatyka\MCDA_2022_april\pydaria\daria.py
+~2, ~3       C:\Informatyka\MCDA_2022_april\pydaria\docs\conf.py
+2.3, 3.0     C:\Informatyka\MCDA_2022_april\pydaria\main.py
+!2, 3.4      C:\Informatyka\MCDA_2022_april\pydaria\mcda_method.py
+~2, ~3       C:\Informatyka\MCDA_2022_april\pydaria\normalizations.py
+2.4, 3.0     C:\Informatyka\MCDA_2022_april\pydaria\topsis.py
+2.6, 3.0     C:\Informatyka\MCDA_2022_april\pydaria\weighting_methods.py
+Tip: Since '# novm' or '# novermin' weren't used, a speedup can be achieved using: --no-parse-comments
+Minimum required versions: 3.4
+Incompatible versions:     2
