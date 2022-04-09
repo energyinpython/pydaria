@@ -1,5 +1,5 @@
 # pydaria
-The Data Variability Based Multi-Criteria Assessment Method based on the TOPSIS method.
+DARIA - The Data Variability Based Multi-Criteria Assessment Method based on the TOPSIS method.
 
 ## License
 
