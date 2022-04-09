@@ -84,7 +84,7 @@ def main():
     dir_list, dir_class = daria._direction(matrix)
 
     # variability of preference values
-    df_varia_fin[met.upper()] = list(var)
+    df_varia_fin[met.upper() + ' var'] = list(var)
     # directions of preferences variability
     df_varia_fin[met.upper() + ' dir'] = list(dir_class)
 
