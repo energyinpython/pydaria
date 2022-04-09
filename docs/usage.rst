@@ -11,25 +11,25 @@ _______________________
 	
 	import numpy as np
 	import pandas as pd
-	
+
 	# Initialize the DARIA method object
-    daria = DARIA()
-	
+	daria = DARIA()
+
 	# Calculate the variability of TOPSIS preferences in all years using the Gini coefficient.
-	# provide ``matrix`` including TOPSIS preference values in particular rows for each year for alternatives in columns.
-    G = daria._gini(matrix)
-	
-    # Calculate variability directions
-    dir_list, dir = daria._direction(matrix)
-	
+	# provide ``matrix`` including TOPSIS preference values for each year in particular rows for alternatives in columns.
+	G = daria._gini(matrix)
+
+	# Calculate variability directions
+	dir_list, dir = daria._direction(matrix)
+
 	# Update efficiencies using DARIA methodology.
 	# Provide vector `S` containing preference values from the most recent evaluated period
 	S = matrix[-1, :]
-    # final updated preferences
-    final_S = daria._update_efficiency(S, G, dir)
+	# final updated preferences
+	final_S = daria._update_efficiency(S, G, dir)
 
-    # The TOPSIS ranking is prepared in descending order according to prefs.
-    final_rank = rank_preferences(final_S, reverse = True)
+	# The TOPSIS ranking is prepared in descending order according to prefs.
+	final_rank = rank_preferences(final_S, reverse = True)
 
 
 The TOPSIS method
