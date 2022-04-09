@@ -59,7 +59,7 @@ class TOPSIS(MCDA_method):
         pis = np.max(weighted_matrix, axis=0)
         nis = np.min(weighted_matrix, axis=0)
 
-        # Calculate chosen distance of every alternative from PIS and NIS using Euclidean distance metric
+        # Calculate distance of every alternative from PIS and NIS using Euclidean distance metric
         Dp = np.sqrt(np.sum(np.square(weighted_matrix - pis), axis = 1))
         Dm = np.sqrt(np.sum(np.square(weighted_matrix - nis), axis = 1))
 

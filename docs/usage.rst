@@ -83,7 +83,7 @@ Output
 
 	
 
-Correlation coefficents
+Correlation coefficients
 __________________________
 
 Spearman correlation coefficient
