@@ -11,8 +11,6 @@ from additions import rank_preferences
 from daria import DARIA
 
 
-
-
 def main():
 
     # Temporal alternatives assessment using the DARIA-TOPSIS method based on the Gini coefficient 
@@ -79,6 +77,8 @@ def main():
     daria = DARIA()
 
     # Calculate the variability of TOPSIS preferences in all years using the Gini coefficient.
+    # You can also choose another variability measure such as _entropy, _std, _stat_var, and _coeff_var
+    # from daria class
     var = daria._gini(matrix)
     # Calculate variability directions
     dir_list, dir_class = daria._direction(matrix)
